@@ -30,16 +30,16 @@ function getLength(arr, cb) {
   cb(arr)
 }
 
-getLength(items, (lengthOfList) => {
-  console.log(lengthOfList)
+  getLength(items, (lengthOfList) => {
+    console.log(lengthOfList)
 })
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
    cb(arr[3])
 }
 
-last(items, (item) => {
-  console.log(item)
+  last(items, (item) => {
+    console.log(item)
 })
 
 function sumNums(x, y, cb) {
@@ -47,22 +47,26 @@ function sumNums(x, y, cb) {
    cb(x + y);
 }
 
-sumNums(2,3, (adds) => {
-  console.log(adds)
+  sumNums(2,3, (adds) => {
+    console.log(adds)
 })
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
     cb(x * y);
 }
 
-multiplyNums(3,4, (mult)=>{
-  console.log(mult)
+  multiplyNums(3,4, (mult)=>{
+    console.log(mult)
 })
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  cb(item.includes(list))
 }
+contains(items, "Gum", (checkList)=> {
+console.log(checkList)})
+
 
 /* STRETCH PROBLEM */
 
